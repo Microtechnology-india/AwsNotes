@@ -1,0 +1,30 @@
+=======================> How to host html file on windows Machine <=============================
+
+1). Login aws console and click on EC2. after that open the EC2 dashboard and click on Launch
+    Instance and give the machine Name and tags.
+
+2). Application and OS Image (Amazon machine image) and select Windows machine(Free tier)
+
+3). Instance type :- select t2.micro (Free tier).
+
+4). Select Key pair (login) create new key pair (give key name and Private key file formet 
+    (.ppm) and then click Create key pair.)
+
+5). Network settings :- Click on Edit button and add security group and description.
+
+6). Inbound security groups rules one group rule type-rdp and port 3389, source_type anywhere
+    click on Add security group rule and select type http source type :- anywhere and port 80. 
+
+7). Click on Configure storage and select 30gb and click on Launch instance. after that click 
+    on View instance. your machine is created and running.
+
+8). Copy the Ip_address and and User name and password ( For getting the password go to the 
+    machine and connect to instance after that click the RDP client and then click the get password
+    and upload the key like(demo.ppm) and click Decrypt password and copy the password).
+
+9). Open the RDP(Remote desktop connection) and paste the ip address and after that paste
+    user name and password.
+
+10). Connect the rdp to access the windows so our windows are like in us and access in bhopal.
+
+11).  

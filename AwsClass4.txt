@@ -1,0 +1,77 @@
+=======================> How to host html file on Ubuntu Machine <=============================
+
+1). Login aws console and click on EC2. after that open the EC2 dashboard and click on Launch
+    Instance and give the machine Name and tags.
+
+2). Application and OS Image (Amazon machine image) and select Ubuntu machine(Free tier)
+
+3). Instance type :- select t2.micro (Free tier).
+
+4). Select Key pair (login) create new key pair (give key name and select key pair type RSA Private
+    key file formet (.ppk) and then click Create key pair.
+
+5). Network settings :- Click on Edit button and add security group and description.
+
+6). Inbound security groups rules one group rule type-ssh and port 22, source_type anywhere
+    click on Add security group rule and select type http source type :- anywhere and port 80. 
+
+7). Click on Configure storage and select 10gb and click on Launch instance. after that click 
+    on View instance. your machine is created and running.
+
+8). Download putty.exe(64bit) and open putty.exe.
+
+9). Open putty.exe ( So need some information (IP/user/passowrd/port)) like(13.232.191.129).
+    select ubuntu port 22 and go through the connection then click on SSH after that click on 
+    Auth after that click credential and click browse selected downloaded key like (demo.ppk) 
+    after that click on open and accept the credential.
+
+================================> Login putty.exe <========================================
+1). ubuntu   (For Login)
+
+2). dir  (Show the directory)
+
+3). ls
+
+4). mkdir ( For create directory )
+
+5). touch (for the creating empty file). sanju.txt.
+
+6). ls  (show the list)
+
+7). ls -l    (show details for all files)
+
+/////////////////////// Web serve is a program which is accept the http/https //////////////////
+                        resquest and give the Response.
+8). sudo apt update  {:- apt- means playstore/npm etc.)
+
+9). sudo systemctl status apache2  ( For checking http apache2 is there are not )
+
+10). sudo apt install apache2    (After that install the apache2)
+
+11). sudo systemctl status apache2  (again check)
+
+12). after that press Q button. for exit.
+
+13). sudo ls /var/www/html
+
+14). sudo cat /var/www/html/index.html (cat/less :- command is for show the content).
+
+15). sudo rm /var/www/html/index.html   (For remove the index.html file)
+
+16). sudo ls /var/www/html   (For so the list of inside the folder)
+
+17). sudo echo "tnpLab">index.html   (As pre as node like console.log)
+
+18). sudo echo "tnpLab">/var/www/html/index.html
+
+19). sudo su
+
+20). sudo echo "tnpLab">/var/www/html/index.html
+
+21). Launch Instance => For Forbidden command
+     chmod -R 600 /var/www/html
+
+22). Again run command
+     chmod -R 777 /var/www/html
+
+

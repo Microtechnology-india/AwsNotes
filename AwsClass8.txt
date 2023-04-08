@@ -1,0 +1,96 @@
+=================================================================> MYSQL DATABASE HOST <===================================================================
+
+1). Verify your database.
+
+2). Create dump of your database or
+    Create backup of your database.
+
+                        ^oldDB    (^newDB file)
+3). mysql dump -u root ecommerce > ecommerce.sql
+
+4). notepad ecommerce.sql
+
+You can other type to create dump file so change the drive {- suppose you have D:/E:/F: drive -}.
+and run these command.
+
+=>  mysql dump -u root ecommerce > ecommerce.dump
+    mysqldump -u root ecommerce > ecommerce.dump
+
+ => notepad ecommerce.dump
+
+5). Aws Open ====> select Region(mumbai) ====> Create a machine {- ubuntu -} {- key=> .ppk -}.
+    after that login the putty or gitbash.
+
+6). ubuntu
+
+7). sudo su -
+
+8). sudo apt update
+
+9). sudo apt install mysql-server
+
+After that push the sql file on your repository and go throw the machine.
+
+10). git clone repo.URL  /  git pull repo.URL.
+
+11). mysql -v
+
+12). After that Login the mysql server
+
+13). mysql -u root -p
+     password:
+
+14). show databases   =====>    create database ecom(create new database)
+
+15). show databases;
+
+16). exit (click on enter button) // ctrl + d
+
+17). you can choose these commands like :-
+  
+    1). mysql dump -u root -p ecom < ecommerce.sql
+
+    2). mysqlimport -u root -p ecom ecommerce.sql
+ 
+    3). mysql -u root -p ecom < ecommerce.sql
+
+{- Some important command here follow -}
+
+  1). create user 'admin'@'localhost' identified by '12345';  {- for careting user -}
+  2). grant all privileges on databaseName.*to'admin'@'localhost';   {- give the permission -}
+  3). alter user 'root'@'localhost' identified with mysql_native_password by '12345';
+
+
+18). Install the latest virsion of node on your machine.
+
+{- Follow these commands -}
+  1). sudo apt install nodejs
+  2). curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+  3). node -v
+  4). sudo apt install -y nodejs
+  5). node -v
+  6). npm -v
+
+19). After that push the source code of your machine.
+
+20). Again go throw your {- ubuntu machine -} and pull the source code of your machine.
+
+21). If that folder or zipped so you can run the command to unzip the folder.
+     {- sudo apt install unzip -} may be this command is zip and try it.
+
+22). Source code than run npm i command.
+
+23). npm start
+
+24). After that go throw your machine on security group like {- edit inbound rule -} and add the port
+     of your nodejs server. like 5000 port me run ho raha hai apka backend.
+
+25).  custum tcp  port => 5000  select anywhere.
+
+26). After that run your api on postman use your local ip address.
+
+   And check All the Api are working properly or not.
+
+27). When we have to need run the React.js application so after that open new session and run the react application first of we will
+     go that particular folder and run npm i and run the npm start
+

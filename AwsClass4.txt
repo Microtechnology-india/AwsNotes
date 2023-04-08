@@ -1,77 +1,68 @@
-=======================> How to host html file on Ubuntu Machine <=============================
+=================================> Host React Project <=======================================
 
-1). Login aws console and click on EC2. after that open the EC2 dashboard and click on Launch
-    Instance and give the machine Name and tags.
+1). First Step we will create machine on ubuntu.
 
-2). Application and OS Image (Amazon machine image) and select Ubuntu machine(Free tier)
+2). Second step open putty.exe. and paste on Public Ip address and select ubuntu port 22
+    and go through the connection then click on SSH after that click on Auth after that click
+    credential and selected downloaded key like (demo.ppk) after that click on open and accept 
+    the credential. 
 
-3). Instance type :- select t2.micro (Free tier).
+============================> Nodejs Installation process <====================================
 
-4). Select Key pair (login) create new key pair (give key name and select key pair type RSA Private
-    key file formet (.ppk) and then click Create key pair.
+3). Third step open putty.exe. and For login the ubuntu for command ununtu(then enter).
 
-5). Network settings :- Click on Edit button and add security group and description.
+4).  Next step sudo apt update
 
-6). Inbound security groups rules one group rule type-ssh and port 22, source_type anywhere
-    click on Add security group rule and select type http source type :- anywhere and port 80. 
+5).  sudo apt install -Y curl
 
-7). Click on Configure storage and select 10gb and click on Launch instance. after that click 
-    on View instance. your machine is created and running.
+6).  curl -sL https://deb.nodeZsource.com/setup_18.x | sudo -E bash -
 
-8). Download putty.exe(64bit) and open putty.exe.
+7).  sudo apt install -y nodejs
 
-9). Open putty.exe ( So need some information (IP/user/passowrd/port)) like(13.232.191.129).
-    select ubuntu port 22 and go through the connection then click on SSH after that click on 
-    Auth after that click credential and click browse selected downloaded key like (demo.ppk) 
-    after that click on open and accept the credential.
+8).  node -v
 
-================================> Login putty.exe <========================================
-1). ubuntu   (For Login)
+9).  npm -v
 
-2). dir  (Show the directory)
+==========================>  Git Installation in ubuntu <=======================================
+1). sudo apt install git
 
-3). ls
+2). git version // git --version
 
-4). mkdir ( For create directory )
+3).   git config --global user.name "sanjeev kushwaha"
+3.1). git config --global user.name
 
-5). touch (for the creating empty file). sanju.txt.
+3).   git config --global user.password "sanjeev9179"
+3.1). git config --global user.password
 
-6). ls  (show the list)
+4).   git config --global user.email "sanjeevkushwaha876@gmail.com"
+4.1). git config --global user.email
 
-7). ls -l    (show details for all files)
+5). git clone repository URL
 
-/////////////////////// Web serve is a program which is accept the http/https //////////////////
-                        resquest and give the Response.
-8). sudo apt update  {:- apt- means playstore/npm etc.)
+6). ls
 
-9). sudo systemctl status apache2  ( For checking http apache2 is there are not )
+7). Go through the git_hub and go to setting and then developer settings click on Tokens(classic)
+    after that click on generate token and click on generate new token(classic) enter the password
+    (git_hub) and give the token name. and In selected scope all fields selected and click on 
+     generate token. 
 
-10). sudo apt install apache2    (After that install the apache2)
+8). Copy the token (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). and paste user.name and password
+    token.
 
-11). sudo systemctl status apache2  (again check)
+9). ls
 
-12). after that press Q button. for exit.
+10). cd then go to that folder
 
-13). sudo ls /var/www/html
+11). ls
 
-14). sudo cat /var/www/html/index.html (cat/less :- command is for show the content).
+12). npm i
 
-15). sudo rm /var/www/html/index.html   (For remove the index.html file)
+13). ls
 
-16). sudo ls /var/www/html   (For so the list of inside the folder)
+14). npm start
 
-17). sudo echo "tnpLab">index.html   (As pre as node like console.log)
+15). Then we will go to the our machine and go on security then security group and click on Edit
+     Inbound Rule And Add rule Custom TCP and Port- 3000 and Source anywhere and save rules.
 
-18). sudo echo "tnpLab">/var/www/html/index.html
-
-19). sudo su
-
-20). sudo echo "tnpLab">/var/www/html/index.html
-
-21). Launch Instance => For Forbidden command
-     chmod -R 600 /var/www/html
-
-22). Again run command
-     chmod -R 777 /var/www/html
-
+16). after that copy Ip address and paste on browser like (3.192.168.47:3000) and Your website is hosted.
 

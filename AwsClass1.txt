@@ -25,8 +25,9 @@
 9). Open the RDP(Remote desktop connection) and paste the ip address and after that paste
     user name and password.
 
-10). Connect the rdp to access the windows so our windows are like in us and access in bhopal.
+10). Connect the rdp to access the windows so our windows are like in US and access in bhopal.
 
+===============================> This is second step to access the .html file <================================
 11). go to the control panel and click on programs and turn windows features on or off after the
      select on IIS and add features and setup and install that. after the installation process.
 
@@ -37,3 +38,8 @@
      file on wwwroot folder.
 
 14). After that copy the IP address and paste the browser and access that index.html file.
+
+=========================> This is First step to access the .html file <===========================
+1). After that download xampp and install after that start apache server and create and file and
+    access anywhere. throw the ipAddress.
+======================================> CLOSE <=============================================

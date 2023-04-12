@@ -1,2 +1,6 @@
 ==================================================================> CREATE IAM USER <=======================================================================
 
+1). Login the AWS. and click on IAM user.
+
+2). Cick on add user. give the user name and click next button and create the user.
+

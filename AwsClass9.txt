@@ -1,0 +1,67 @@
+======================================> AWS RDS <============================================
+
+    Amazon Relational Database Service (Amazon RDS) is a collection of managed services that
+             makes it simple to set up, operate, and scale databases in the cloud.
+
+1). In database we are using mysql for storing the data.But in case of AWS we are using RDS(Relational
+    database service ). for string the data. RDS support mysql, mariaDB, postgrass, oracle, Aurora.
+
+2). In RDS we are using 20GB for free of one year.
+
+3). Advantages of AWS RDS =>
+			   1). Rds Backup
+					1). Automated backup
+					2). Snapshots
+			   2). Restore Backup
+			   3). Multi Availbility zone
+			   4). Read Replica
+1). Rds Backup are provide to take the two type of backup like automated backup and second one is snapshots
+    (menual backup). It is maximum (1-35)days take backup of our database.
+
+2). Restore backup => Restore backup is used for restore the data of our database.
+
+3).Multi Availbility zone => It can be access to different-2 Region or different-2 availbility zone.
+
+4). Read Replica => Amazon RDS Read Replicas enable you to create one or more read-only copies of your database 
+    instance within the same AWS Region or in a different AWS Region.Updates made to the source database are then
+    asynchronously copied to your Read Replicas.
+   {- Assume you have 1 million bank users want to check the balance.
+      suppose you want to read the rds data so there are only SELECT command running of (Read operations).
+   {- write/update/delete operation are perform the Main DB .
+
+  Kind of Read Replica database => 
+			   1). Complete Replica
+			   2). Partial Replica
+			   3). Horizontal Replica
+			   4). Vertical Replica
+
+  Read Replica database are create the copy like (R1, R2, R3, R4, R5).
+
+   ==> For creating database in RDS Follow these steps -------->
+
+1). Login the aws and search for RDS and after that click on create database.
+
+2). choose a database creation method => Standard create
+
+3). Engine options => mysql or mariaDB ( select version of engine version ).
+
+4). Templates => Free tier.
+
+5). settings => Give the database name and user name and generate password (8-characters).
+
+6). Instance configuration => we will select free tier.
+
+7). Storage => allocated storage 20gb for free.
+
+8). Storage autoscaling we will Enable storage autoscaling. Other options default set.
+
+9). give the public access.VPC security group so we will choose existing or create new security groups
+    ( EC2 security group or S3 security group).
+
+10). Monitoring => Enable Enhanced monitoring.
+
+11). Additional configuration => give the initial database name. Enable automated backups(how many time period 
+     do you take the backup).Enable encryption and log exports enable.
+
+12). After that click on create database.
+ 
